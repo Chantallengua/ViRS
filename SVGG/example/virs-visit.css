@@ -1,0 +1,527 @@
+.carousel-inner > .item > img {
+  margin:auto; 
+  width:100%;
+}
+  
+.carouselsize1 {
+  width:50%;
+  height:50%;
+    margin:auto; 
+}
+
+.carouselsize2 {
+    margin:auto; 
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.right {
+float: right; /*togli questo float per evitare che il testo sia allineato e circondi l'immagine*/
+margin: 0px 0px 15px 15px;
+}
+
+.left {
+float: left; /*togli questo float per evitare che il testo sia allineato e circondi l'immagine*/
+margin: 0px 15px 15px 0px;
+}
+
+/*Floating Back-To-Top Button*/
+    #myBtn {
+        position: fixed;
+        bottom: 5%;
+        float: right;
+        right: 13%;
+        left: 87%;
+        max-width: 120px;
+        width: 100%;
+        font-size: 14px;
+        border-color: rgba(220,220,220,0.7);
+        background-color: rgba(255,255,255,0.7);
+        padding: 7px;
+        border-radius: 4px;
+    }
+/*On Hover Color Change*/
+    #myBtn:hover {
+        background-color: #65759A;
+		  border-color: #B5C4ED;
+    }
+	
+#myBtnletters {
+color: black; font-family: 'Raleway';
+}	
+
+
+
+/*Floating Back-To-Top Button*/
+@media{
+    .uff {
+        position: fixed;
+        bottom: 5%;
+        float: left;
+        right: 87%;
+        left: 13%;
+        max-width: 120px;
+        width: 100%;
+        font-size: 14px;
+        border-color: rgba(220,220,220,0.7);
+        background-color: rgba(255,255,255,0.7);
+        padding: 7px;
+        border-radius: 4px;
+		z-index:-2;
+    }
+}
+
+
+	
+/* Mapify custom popOver example: il testo del popOver */
+	
+
+.mapify-popOver strong {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1em;
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.mapify-popOver {
+  color: #999;
+  font-size: 16px;
+  height: 130px;
+}
+
+.mapify-popOver-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.mapify-popOver.customPopOver { background: #09f; }
+
+/* Custom hovering style: il testo delle città che rimane sopra */
+
+.mapify-hover {
+  fill: rgba(0,0,0,0.15);
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.customHover {
+  fill: #4C5D80;
+  stroke: #fff;
+  stroke-width: 2;
+    opacity: 0.7;
+}
+
+
+.btn
+ {
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+  box-shadow: 0px 3px 3px 0px rgba(33, 37, 41, 0.1);
+}
+
+.btn-primary {
+  background-color: rgba(29, 53, 87, 0.9);
+  border-color: #65759A;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #65759A;
+  border-color: #B5C4ED;
+}
+
+.btn-xl {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#cip {
+  font-weight: 1;
+}
+
+
+
+
+
+/* post-it Farewell */
+.intro {
+  position: relative;
+}
+
+@media {
+  .intro .intro-img {
+    width: 45%;
+    float: left;
+  }
+  .intro .intro-text {
+    right: 0;
+    width: 60%;
+    position: absolute;
+  }
+  .intro .intro-text .intro-button {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro .intro-text {
+    width: 45%;
+  }
+}
+
+
+
+/* sailing img */
+@media {
+  .sailing-img {
+    float: right;
+  }
+}
+
+
+
+
+
+/*Da qui in poi è uguale a virs.css*/
+
+  
+body {
+  font-family: 'Lora';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 43, 45, 0.3))), url("bg.jpg");
+  background: linear-gradient(rgba(47, 43, 45, 0.3)), url("bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway';
+}
+
+p {
+  line-height: 1.75;
+}
+
+li {
+  line-height: 1.75;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.site-heading {
+  margin-top: 13rem;
+  margin-bottom: 13rem;
+  line-height: 1;
+  font-family: 'Source Sans Pro';
+  font-size: 4rem;
+  color: white;
+  text-shadow: 3px 2px #1b1b1c;
+}
+
+
+.site-heading-upper {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.65);
+  text-shadow: 3px 2px #1b1b1c;
+}
+
+/* questo è '- Virtual Roman Shipwreck Museum -' */
+.site-heading .site-heading-lower {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+
+/* i post-it */
+.page-section {
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+}
+
+/* questi due sono i titoletti, in alto e normale, in ogni "post-it" */
+.section-heading .section-heading-upper {
+  display: block;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.section-heading .section-heading-lower {
+  display: block;
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* trasparenza dei post-it */
+.bg-faded {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+
+
+#mainNav {
+  background-color: rgba(29, 53, 87, 0.9);
+  font-family: 'Raleway';
+}
+
+#mainNav .navbar-brand {
+  color: #e6a756;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 800;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 0.9rem;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #000223;
+  }
+  #mainNav .navbar-nav .nav-item.active .nav-link:hover {
+    color: #000223;
+  }
+}
+
+
+
+/* capolettera */
+#special:first-letter {
+    float:left;
+    font: bold 70px/55px Lora;
+}
+
+
+
+/* il secondo post-it */
+.intro2 {
+  position: relative;
+  	min-height: 50vw;      /* è questo che stai cercando */
+} 
+
+@media {
+  .intro2 .intro2-img {
+    width: 55%;
+    float: left;
+  }
+  .intro2 .intro2-text {
+    right: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+	min-width: 60vw;
+  }
+  .intro2 .intro2-text .intro2-button {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro2 .intro2-text {
+    width: 45%;
+  }
+}
+
+
+
+/* aggiunta per questa pagina VISIT: parte sotto la mappa, a destra */
+
+
+.intro2 {
+  position: relative;
+}
+
+@media {
+  .intro2 .intro2-img {
+    width: 55%;
+    float: left;
+  }
+  .intro2 .intro2-text {
+    right: 0;
+    width: 60%;
+    margin-top: -1rem;
+    position: absolute;
+  }
+  .intro2 .intro2-text .intro2-button {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro2 .intro2-text {
+    width: 45%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CTA */
+
+.cta {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(29, 53, 87, 0.9);
+}
+
+.cta .cta-inner {
+  position: relative;
+  padding: 3rem;
+  margin: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.cta .cta-inner:before {
+  border-radius: 0.5rem;
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  bottom: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  border: 0.25rem solid rgba(255, 255, 255, 0.85);
+}
+
+
+
+/* icone Fontawesome */
+
+.service-icon {
+  background-color: #fff;
+  color: #000000;
+  height: 5rem;
+  width: 5rem;
+  display: block;
+  line-height: 4.7rem;
+  font-size: 2.25rem;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+  .about-heading .about-heading-img {
+    position: relative;
+    z-index: 1;
+  }
+  .about-heading .about-heading-content {
+    margin-top: -5rem;
+    position: relative;
+    z-index: 0;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .product-item .product-item-title {
+    position: relative;
+    z-index: 0;
+    margin-bottom: -3rem;
+  }
+  .product-item .product-item-img {
+    position: relative;
+    z-index: 1;
+    max-width: 60vw;
+  }
+  .product-item .product-item-description {
+    position: relative;
+    z-index: 0;
+    margin-top: -2rem;
+    max-width: 50vw;
+  }
+}
+
+
+
+
+.list-hours {
+  font-size: 0.9rem;
+}
+
+.list-hours .list-hours-item {
+  border-bottom: 1px solid rgba(230, 167, 86, 0.5);
+  padding-bottom: .25rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.list-hours .list-hours-item.today {
+  font-weight: bold;
+  color: #e6a756;
+}
+
+@media (min-width: 992px) {
+  .list-hours {
+    width: 50%;
+    font-size: 1.1rem;
+  }
+}
+
+.address strong {
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: rgba(29, 53, 87, 0.9);
+}
+
+.text-primary {
+  color: #e6a756 !important;
+}
+
+.bg-primary {
+  background-color: #e6a756 !important;
+}
+
+.font-weight-light {
+  font-weight: 100 !important;
+}
