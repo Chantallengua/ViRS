@@ -1157,36 +1157,47 @@ aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa a
 <p> aaaa aaaa aaaaa aaaaaaa aaa</p>
 <p onmouseover = "show()" onmouseout="hide()">link</p>
 
+<img src = "img/cabin.jpg" style="visibility:hidden" id = "mapp">
 
-<div >
-    <a class="btn btn-primary example" data-toggle="popover" data-content="Popover text">Right</a>
-</div>
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa</p>
+
+
 <script>
-$('.example').each(function() {
-    var options = {
-        placement: function (context, source) {
-            var position = $(source).position();
-    
-            if (position.left < 280) {
-                return "center center";
-            }
-    
-            if (position.top < 280){
-                return "center center";
-            }
-            
-            else {
-                return "center center";
-            }
-        } , trigger: "hover"
-    };
-    $('.example').popover(options);
-});
+function show() {
+    document.getElementById('mapp').style.visibility = 'visible';
+}
+function hide() {
+    document.getElementById('mapp').style.visibility = 'hidden';
+}
 </script>
+
+
+
+<p> 
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
+<br>
 </p>
 
+<p> aaaa aaaa aaaaa aaaaaaa aaa</p>
+<p onmouseover = "show()" onmouseout="hide()">link</p>
+
+<img class="uff" src = "img/cabin.jpg" style="visibility:hidden" id = "mapp">
+
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa</p>
 
 
+<script>
+function show() {
+    document.getElementById('mapp').style.visibility = 'visible';
+}
+function hide() {
+    document.getElementById('mapp').style.visibility = 'hidden';
+}
+</script>
 
 			              </div>
           </div>
