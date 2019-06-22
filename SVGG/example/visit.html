@@ -37,14 +37,15 @@
   <!-- FontAwesome -->  
   <script src="https://kit.fontawesome.com/26e52bfea1.js"></script>
   
-  
   <!-- Custom styles for this template -->
   <link href="virs-visit.css" rel="stylesheet">
   
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  
-  
+
+
+
+	
 	  <script>
 function fadeImg(x) {
   x.style.filter = "brightness(50%)";
@@ -97,40 +98,58 @@ function normalImg(x) {
 
 <button id="myBtn" class="animated fadeInUp" style="animation-delay: 9s;"><a href="#top" id="myBtnletters"><i class="fas fa-long-arrow-alt-up"></i> Back to top</a></button>
 
-  
-    <section class="page-section about-heading">
+<section class="page-section about-heading">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
       <div class="about-heading-content">
-        <div class="row">
+        <div class="row">				
           <div class="col-xl-9 col-lg-10 mx-auto">
+		  
             <div class="bg-faded rounded p-5">
               <h2 class="section-heading mb-4">
                 <span class="section-heading-upper">A journey under the sea</span>
                 <span class="section-heading-lower">About the VISIT</span>
               </h2>
-              <p id="special" class="mb-3" align="justify">
-			  The visit of the <i>ViRS</i> museum is articulated in six rooms and seven corridors, for a total 
 			  
+<p class="mb-3" align="justify">
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+</p>
 			  
-			  </p>
-            </div>
+<img src="img/map/map.png" class="rounded center" style="width: 40%" alt="" onmouseover="bigI(this)" onmouseout="normalI(this)">
+
+			<script>
+function bigI(x) {
+  x.style.height = "100%";
+  x.style.width = "100%";
+}
+
+function normalI(x) {
+  x.style.height = "40%";
+  x.style.width = "40%";
+}
+</script>
+
+
+<p class="mb-3" align="justify">
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+</p>
+			              </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-
-  <section class="page-section clearfix">
+  </section>	
+  
+   <section class="page-section clearfix">
     <div class="container">
       <div class="product-item">
 	  
         <div class="product-item-title d-flex">
           <div class="intro-text bg-faded p-5 ml-auto rounded">
-            <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Maps</span>
-              <span class="section-heading-lower">Real museum VS ViRS</span>
+            <h2 class="section-heading mb-3">
+              <span class="section-heading-upper">A journey under the sea</span>
+              <span class="section-heading-lower">About the VISIT</span>
             </h2>
 		  			<p class="mb-3" align="center" >
 						Pass your mouse <b>over</b> the rooms and the corridors of the map of <i>ViRS</i> Museum <br> 
@@ -290,7 +309,7 @@ document.getElementByName("ciao").style.opacity = "0.5";
 			<p></p>
 
 			    <div class="intro-button mx-auto" align="center">
-                  <a class="btn btn-primary btn-xl" href="SVGG/example/cartina.html">Are you ready<br>to dive into the sea?</a>
+                  <a class="btn btn-primary btn-xl" href="#entrance">Start your<br>visit!</a>
                 </div>
           </div>
         </div>
@@ -329,14 +348,18 @@ document.getElementByName("ciao").style.opacity = "0.5";
                 <span class="section-heading-upper">A journey under the sea</span>
                 <span class="section-heading-lower">About the VISIT</span>
               </h2>
-              <p id="special" class="mb-3" align="justify">
-			  The visit of the <i>ViRS</i> museum is articulated in six rooms and seven corridors, for a total 
+              
+			  <p id="special" class="mb-3" align="justify">
+			  The visit of the <i>ViRS</i> museum is articulated in six rooms and seven corridors, for a total
+</p>
+<p class="mb-0" align="justify"><a data-toggle="modal" href="#entrancemodal">ciao</a>	
+			  
 			 			  
 			  </p>
 
 
 
-
+<div class="mb-3 mt-3">
 <div id="carouselExampleIndicators1" class="carousel carouselsize1 slide carousel-fade" style="text-align:center" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
@@ -345,29 +368,13 @@ document.getElementByName("ciao").style.opacity = "0.5";
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/soffitto3.png" alt="First slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)">
-	  	<div class="carousel-caption d-none d-md-block">
-			<h5>uno</h5>
-				<p>unouno</p>
-		</div>
-
-				
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/soffitto3.png" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/soffitto4.png" alt="Second slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)">
-	    <div class="carousel-caption d-none d-md-block">
-    <h5>due</h5>
-    <p>duedue</p>
-  </div>
-
-  
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/soffitto4.png" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/soffitto3.png" alt="Third slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)">
-	    <div class="carousel-caption d-none d-md-block">
-    <h5>tre</h5>
-    <p>tretre</p>
-  </div>
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/soffitto3.png" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
@@ -378,6 +385,7 @@ document.getElementByName("ciao").style.opacity = "0.5";
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+</div>
 </div>
 
 
@@ -437,7 +445,10 @@ document.getElementByName("ciao").style.opacity = "0.5";
 							 		 
 
      <div class="product-item-description d-flex mr-auto">
-          <div class="bg-faded p-5 rounded">		
+          <div class="bg-faded p-5 rounded">	
+
+			<p class="mb-0" align="justify"><a data-toggle="modal" href="#protagonistsmodal">ciao</a></p>		  
+
             <p id="special" class="mb-0" align="justify">			
 			The museum of Albenga (represented by the grey map above) is located inside the ancient <i>Palazzo Peloso Cepolla</i>, a valuable 
 			early 17th century building in the historic center of Albenga. The palace is spread on three floors, and the underwater 
@@ -540,9 +551,9 @@ Many artifacts
 a 3D printed tactile model ship
 a projection on Est-wall
 </p>
-<img src="img/map/zroom1.png" class="rounded center" alt="">
+<img src="img/map/zroom1.png" style="width:20%" class="rounded left" alt="">
 <p>blabla</p>
-<img src="img/port.png" class="rounded center" alt="">
+<img src="img/port.png"  class="rounded center" alt="">
 
 <p>
 blablabla 
@@ -653,7 +664,7 @@ Male protagonist on the foreground, near his beloved
             <span class="section-heading-lower">Goodbye, my love</span>
           </h2>
           <p id="special" class="mb-3" align="justify" > 
-		  Evening. Captain Marcus confesses that he won’t bring on board Livia, because of the ominous signs of the gods.               But he doesn’t even want her to worry about his return, so he swears that he will marry her at the end of the journey, if she promises to wait for him in that place, by the sea.
+		  Evening. <a data-toggle="modal" href="#farewellmodal">Do you remember where we are?</a> Captain Marcus confesses that he won’t bring on board Livia, because of the ominous signs of the gods.               But he doesn’t even want her to worry about his return, so he swears that he will marry her at the end of the journey, if she promises to wait for him in that place, by the sea.
 		  </p>
 		  
 		  
@@ -664,6 +675,8 @@ Male protagonist on the foreground, near his beloved
   </section>
   
 
+
+<!-- 4 - 2nd Room - Navigation-->
   <section class="page-section cta" id="navigation">
     <div class="container">
       <div class="row">
@@ -696,7 +709,7 @@ Male protagonist on the foreground, near his beloved
 			  The visit of the <i>ViRS</i> museum is articulated in six rooms and seven corridors, for a total 
 			 			  
 			  </p>
-			  <p><a data-toggle="modal" href="#buildingmodal">Do you remember where we are?</a></p>
+			  <p><a data-toggle="modal" href="#navigationmodal">Do you remember where we are?</a></p>
 			  <p>
 9m x 14m
 Blue areas: floor-projection of sea
@@ -725,7 +738,7 @@ blablabla
 </p>
 
 
-			<div id="carouselExampleIndicators4" class="carousel carouselsize2 slide" style="text-align:center" data-ride="carousel">
+			<div id="carouselExampleIndicators4" class="carousel carouselsize1 slide" style="text-align:center" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
@@ -964,7 +977,7 @@ Lightnings
 			  The visit of the <i>ViRS</i> museum is articulated in six rooms and seven corridors, for a total 
 			 			  
 			  </p>
-			  <p><a data-toggle="modal" href="#buildingmodal">ciao</a></p>
+			  <p><a data-toggle="modal" href="#stormmodal">ciao</a></p>
 			  <img src="img/map/zroom3.png" class="rounded left" style="width: 30%;" alt="">
 
 <p class="mb-3" align="justify">
@@ -1100,23 +1113,23 @@ ciao ciao ciao</p>
 
 <section class="page-section about-heading">
     <div class="container">
-																<img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
       <div class="about-heading-content">
-        <div class="row">
+        <div class="row">				
           <div class="col-xl-9 col-lg-10 mx-auto">
+
             <div class="bg-faded rounded p-5">
               <h2 class="section-heading mb-4">
                 <span class="section-heading-upper">A journey under the sea</span>
                 <span class="section-heading-lower">About the VISIT</span>
               </h2>
 
-<img src="img/gif/a.gif" class="rounded center" style="width: 40%" alt="">
+<img src="img/gif/a.gif" class="rounded center" style="width: 40%" alt="" >
+
+			  
+
+aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa</p>
 
 
-              <p id="special" class="mb-3" align="justify">
-			  The visit of the <i>ViRS</i> museum is articulated in six rooms and seven corridors, for a total 
-			 			  
-			  </p>
 			  <p><a data-toggle="modal" href="#sinkingmodal">ciao</a></p>
 			  
 
@@ -1132,7 +1145,15 @@ Not suitable for:
 Vertigo-sufferers
 Kids under 6-years-old
 Elderly visitors
-</p>			  
+</p>	
+
+<p>prova numero 2</p>
+<p>testo<br>
+testo<br>
+testo<br>
+testo<br>
+testo<br></p>		  
+			  
 			  
 			  <p class="mb-3" align="justify">
 altro testo
@@ -1156,49 +1177,15 @@ aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa a
 </p>
 
 <p> aaaa aaaa aaaaa aaaaaaa aaa</p>
-<p onmouseover = "show()" onmouseout="hide()">link</p>
 
-<img src = "img/cabin.jpg" style="visibility:hidden" id = "mapp">
 
 aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa</p>
 
 
-<script>
-function show() {
-    document.getElementById('mapp').style.visibility = 'visible';
-}
-function hide() {
-    document.getElementById('mapp').style.visibility = 'hidden';
-}
-</script>
 
 
 
-<p> 
-aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
-aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
-aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
-aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
-aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa
-<br>
-</p>
 
-<p> aaaa aaaa aaaaa aaaaaaa aaa</p>
-<p onmouseover = "show()" onmouseout="hide()">link</p>
-
-<img class="uff" src = "img/cabin.jpg" style="visibility:hidden" id = "mapp">
-
-aaaa aaaa aaaaa aaaaaaa aaaa aaaaaa aaaaaa aaaaaaa aaaaaa aaaaaa aaaaa aaaaaaa aa aa</p>
-
-
-<script>
-function show() {
-    document.getElementById('mapp').style.visibility = 'visible';
-}
-function hide() {
-    document.getElementById('mapp').style.visibility = 'hidden';
-}
-</script>
 
 			              </div>
           </div>
@@ -1228,6 +1215,55 @@ function hide() {
 			  </div>
 			  </div>
 			  </section>	
+			  
+
+			  
+<section class="page-section about-heading">
+    <div class="container">
+		
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">A journey under the sea</span>
+                <span class="section-heading-lower">About the VISIT</span>
+              </h2>
+
+
+
+
+
+			  <p><a data-toggle="modal" href="#alternativemodal">ciao</a></p>
+			  
+
+<p class="mb-3" align="justify">
+6m x 22m
+Explanatory and braille panels of the shipwreck
+Storm sounds
+No projections
+</p>	
+
+<p>prova numero 2</p>
+<p>testo<br>
+testo<br>
+testo<br>
+testo<br>
+testo<br></p>
+
+			  
+			  <p class="mb-3" align="justify">
+altro testo
+</p>
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
 
 <!-- 8 - 5th Corridor - Going Underwater-->	
   <section class="page-section cta" id="goingunderwater">
@@ -1243,7 +1279,46 @@ function hide() {
 			  </div>
 			  </div>
 			  </div>
-			  </section>				  
+			  </section>		
+
+<section class="page-section about-heading">
+    <div class="container">
+		
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">A journey under the sea</span>
+                <span class="section-heading-lower">About the VISIT</span>
+              </h2>
+			  <p><a data-toggle="modal" href="#goingunderwatermodal">ciao</a></p>			
+<p class="mb-3" align="justify">
+6m x 22m
+Explanatory and braille panels of the shipwreck
+Storm sounds
+No projections
+</p>	
+<img src="img/corridor.png" class="rounded right" style="width: 40%" alt="">
+<p>prova numero 2</p>
+<p>testo<br>
+testo<br>
+testo<br>
+testo<br>
+testo<br></p>
+<p class="mb-3" align="justify">
+altro testo
+</p>
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>			 
+
+
+  
 
 <!-- 9 - 5th Room - Underwater Shipwreck-->	
   <section class="page-section cta" id="underwater">
@@ -1261,6 +1336,232 @@ function hide() {
 			  </div>
 			  </section>		
 
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">A journey under the sea</span>
+                <span class="section-heading-lower">About the VISIT</span>
+              </h2>
+			  <p><a data-toggle="modal" href="#underwatermodal">ciao</a></p>
+<img src="img/map/zroom5a.png" class="rounded right" style="width: 30%" alt="">
+<p class="mb-3" align="justify">
+11m x 12m
+3 activites:
+Fish-making + amphorae-making on 8 touchable screens
+Real-like fish behaviour when touching them on the walls: quick get-away by means of sensors
+Treasure hunt in VR headset inside the inner room
+<br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+</p>
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+<p class="mb-3" align="justify">
+<b>1. Fish making</b>
+</p>
+<p class="mb-3" align="justify">
+<img src="img/map/zroom5b.png" class="rounded left" style="width: 20%" alt="">
+<img src="img/underwater/fishmaking.jpg" class="rounded right" style="width: 40%" alt="">
+</p>
+<p class="mb-3" align="justify">
+Fish-making + Amphorae-making
+Customization of Mediterranean fish and/or real-like amphorae
+Nickname to both
+Immediate appearance on the walls.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<img src="img/gif/fishmaking.gif" class="rounded center" style="width: 40%" alt="">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<img src="img/underwater/fishamphorae.png" class="rounded center" style="width: 40%" alt="">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+</p>	
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>	
+
+
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+			
+<p class="mb-3" align="justify">
+<b>2. Sensor projections <br></b>
+<i>On the walls</i>
+</p>
+<p class="mb-3" align="justify">
+<img src="img/map/zroom5c.png" class="rounded left" style="width: 20%" alt="">
+<img src="img/underwater/wall4-2.jpg" class="rounded right" style="width: 40%" alt="">
+</p>
+<p class="mb-3" align="justify">
+Default: seaweed, rocks, amphorae, particular fish
+The maked-items have an expiration time of 30 min.
+Movement sensors for the fish (default or maked):
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<img src="img/gif/pesci.gif" class="rounded center" style="width: 40%" alt="">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<hr>
+</p>
+
+<p class="mb-3" align="justify">
+<i>On the floor</i>
+
+<p class="mb-3" align="justify">
+<img src="img/gif/pesci2.gif" class="rounded right" style="width: 40%" alt="">
+Default: seaweed, rocks, amphorae, particular fish
+The maked-items have an expiration time of 30 min.
+Movement sensors for the fish (default or maked):
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<hr>
+</p>
+
+<p class="mb-3" align="justify">
+<i>On the ceiling</i>
+</p>
+<img src="img/underwater/ceiling4-1.png" class="rounded right" style="width: 40%" alt="">
+<p class="mb-3" align="justify">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+
+, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<img src="img/underwater/ceiling4-2.png" class="rounded left" style="width: 40%" alt="">
+<img src="img/underwater/ceiling4-3.png" class="rounded right" style="width: 40%" alt="">
+
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s., when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+</p>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>	
+  
+  
+  
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+
+
+			
+<p class="mb-3" align="justify">
+<b>3. Treasure hunt in VR headset <br></b>
+<i>Overview</i>
+</p>
+<p class="mb-3" align="justify">
+<img src="img/map/zroom5d.png" class="rounded left" style="width: 20%" alt="">
+<img src="img/underwater/vr7.jpg" class="rounded right" style="width: 35%" alt="">
+<p class="mb-3" align="justify">
+Inner room with glass walls
+Underwater treasure hunt with 4 VR headsets
+Paper certificate to the winner (at the Shop).
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+<div class="rounded pb-4">
+<img src="img/underwater/vr9.jpg" class="rounded center" style="width: 60%" alt="">
+</div>
+<p class="mb-3" align="justify">
+<img src="img/underwater/thecoin.png" class="rounded right" style="width: 20%" alt="">
+Target users specifics: kids from 10 
+Each session is made by:
+Introductory tutorial made on a LCD screen consisting of a speech made by the captain, survived the sinking of the ship, asking the players to recover Livia’s wedding ring;
+Wearing and adjusting of the VR headset, with help of a person from the staff;
+Real underwater treasure hunt (10 minutes long);
+Removal of the VR headset;
+Only to the winner: gift of a little wooden coin that can be exchanged in the shop for the personalized paper certificate.
+</p>
+<hr>
+<p class="mb-3" align="justify">
+<i>The tutorial - 1st room</i>
+</p>
+<p class="mb-3" align="justify">
+<img src="img/map/zroom5e.png" class="rounded left" style="width: 20%" alt="">
+Made on a LCD screen (the light blue line in the map on the right) in the first part of the glass room.
+The captain is alone in the sea, clinging to a wooden plank. He addresses to the four players as “creatures sent by the gods” because of their strange clothes and beg them to bring him Livia’s wedding ring, the one he will use to ask to her hand.
+He does not explain how to move with controllers (it would be logically impossible since he has never seen before the visitors’ equipment). This is the task of the staff.
+He gives a clue to players: that the ring shines. 
+</p>
+<hr>
+<p class="mb-3" align="justify">
+<i>The game - 2nd room</i>
+</p>
+<p class="mb-3" align="justify">
+<img src="img/map/zroom5f.png" class="rounded left" style="width: 20%" alt="">
+Game scenario with realistic representation.
+Single-player but with multi-player visualization (i.e. the other participants’ avatars are shown in the game)
+4 x 4,5 metres room, where the players can freely move.
+The position of the ring in the site will be casually recreated each time the players start a game, to ensure unpredictability.
+Possibility to grasp the ring, rocks and pieces of woods.
+</p>
+<p class="mb-3" align="justify">
+<img src="img/underwater/vrrr.png" class="rounded right" style="width: 50%" alt="">
+The scenario is composed by the ship, unreachable and on the background, lying on the sand, and a real-life representation of the actual disposition of the amphorae.
+Different kinds of fish populate the scenario, among with seaweed. There aren’t dangerous creatures.
+<img src="img/gif/underwat.gif" class="rounded left" style="width: 50%" alt="">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<hr></p>
+<p class="mb-3" align="justify">
+<i>The game</i>
+</p>
+<p class="mb-3" align="justify">
+<img src="img/underwater/device.png" class="rounded right" style="width: 50%" alt="">
+HTC Vive VR headset.
+In the controller, the central button is used to grasp objects from the sea bed.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+</p>
+<p class="mb-3" align="justify">
+The interface is given by the player’s hands, with which he can grasp rocks, wood and the ring.
+A small timer in a corner indicates the remaining time.
+The player will never see himself, but will easily see other players’ avatars.
+Female and male avatars are identical (be-cause covered by wetsuits and diving masks).
+</p>
+<div class="mb-3 mt-3">
+<img src="img/underwater/handssub.png" class="rounded center" style="width: 100%" alt="">
+</div>
+<p class="mb-3" align="justify">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+</p>
+<p class="mb-3" align="justify">
+<img src="img/underwater/grid.jpg" class="rounded left" style="width: 40%" alt="">
+The player can freely move in a 4 x 4,5 metres room, but to prevent him/her from hitting the real walls, a grid appears when he/she approaches to the borders of the virtual space.
+When one of the player has found the ring, they all can choose to remain and explore the area until the timer counts zero.
+</p>
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>	
+
+
+
 <!-- 10 - 6th Corridor - The Captain's beloved-->				  
   <section class="page-section cta" id="beloved">
     <div class="container">
@@ -1276,6 +1577,29 @@ function hide() {
 			  </div>
 			  </div>
 			  </section>		
+			  
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="img/love4.png" style="width: 45%;" alt="">
+        <div class="intro-text left-0 bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">Emotional storytelling n.2</span>
+            <span class="section-heading-lower">Goodbye, my love</span>
+          </h2>
+          <p id="special" class="mb-3" align="justify" > 
+		  Projection of Livia, home, watching the sea
+		  </p>
+		  <p><a data-toggle="modal" href="#belovedmodal">ciao</a>
+		  </p>
+		  
+		  
+		  <img class="center img-fluid mb-3 mb-lg-0 rounded" style="width: 83%;" src="img/love3little.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
 <!-- 11 - 7th Corridor - From 100BC to 2000AD-->				  
   <section class="page-section cta" id="100bc-2000ad">
@@ -1292,6 +1616,44 @@ function hide() {
 			  </div>
 			  </div>
 			  </section>		
+			  
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">A journey under the sea</span>
+                <span class="section-heading-lower">About the VISIT</span>
+              </h2>
+			  <p><a data-toggle="modal" href="#from100BCto2000ADmodal">ciao</a></p>
+<p class="mb-3" align="justify">
+explanatory panels progressively show the deterioration of the underwater ship…
+… until present days
+</p>	
+<img src="img/sunken1.png" class="rounded right" style="width: 40%" alt="">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+<img src="img/sunken2.png" class="rounded left" style="width: 40%" alt="">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+<img src="img/sunken3.png" class="rounded right" style="width: 40%" alt="">
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+<img src="img/sunken4.png" class="rounded left" style="width: 40%" alt="">
+<p>prova numero 2</p>
+<p>testo<br>
+testo<br>
+testo<br>
+testo<br>
+testo<br></p>			  
+<p class="mb-3" align="justify">
+altro testo
+</p>
+			   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>				  
 
 <!-- 12 - 6th Room: Recovering the Shipwreck-->	
   <section class="page-section cta" id="recovering">
@@ -1309,6 +1671,110 @@ function hide() {
 			  </div>
 			  </section>		
 
+
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">A journey under the sea</span>
+                <span class="section-heading-lower">About the VISIT</span>
+              </h2>
+			  <p><a data-toggle="modal" href="#recoveringmodal">ciao</a></p>
+<p class="mb-3" align="justify">
+7m x 5m
+Panels explaining the recovery of the wreck
+Underwater archaeological excavations for kids
+No virtual activities
+</p>	
+<img src="img/excavation.jpg" class="rounded right" style="width: 40%" alt="">
+<p class="mb-3" align="justify">prova numero 2</p>
+<p class="mb-3" align="justify">testo<br>
+testo<br>
+testo<br>
+testo<br>
+testo<br>
+<hr>
+Real pictures of the ship (“Artiglio”) that in 1950, with professor Giovanni Lamboglia, began the first fishing of amphorae.
+<br>
+Information about the difficulties of the underwater documentation and excavation of such sites.
+<img src="img/recovering.png" class="rounded right" style="width: 40%" alt="">
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<q>
+Il 9 febbraio furono issate a bordo le prime anfore, e l’interesse della stampa e del pubblico diventò immediatamente spasmodico, creando seri intralci al lavoro. Fu, ciò nondimeno, un’impressione indimenticabile veder salire a bordo le anfore intatte, a grappoli di cinque o sei, legate a doppio nodo con una fune dai palombari che lavoravano sul fondo, coperte dai colori vivissimi della fauna marina, che al sole si estinguono dopo pochi minuti, di alghe, incrostazioni calcaree e molluschi secolari
+</q>
+<q>
+On 9 February the first amphorae were hoisted on board, and the interest of the press and the public immediately became spasmodic, creating serious obstacles to work. Nonetheless, it was an unforgettable impression to see the intact amphorae come up on board, in clusters of five or six, tied to a double knot with a rope by the divers who were working on the bottom, covered by the vivid colors of the marine fauna, that become extinct after a few minutes, of algae, limestone deposits and secular molluscs.
+</q>
+</p>			  
+<p class="mb-3" align="justify">
+altro testo
+</p>
+
+			<div id="carouselExampleIndicators6" class="carousel carouselsize1 slide" style="text-align:center" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators6" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators6" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators6" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/artifacts/art4-1.png" alt="First slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)">	
+	    <div class="carousel-caption d-none d-md-block">
+    <h5>due</h5>
+    <p>duedue</p>
+  </div>	  
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/artifacts/art4-2.png" alt="Second slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)"> 
+	  	    <div class="carousel-caption d-none d-md-block">
+    <h5>due</h5>
+    <p>duedue</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/artifacts/art4-3.png" alt="Third slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)">
+	  	    <div class="carousel-caption d-none d-md-block">
+    <h5>due</h5>
+    <p>duedue</p>
+  </div>
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/artifacts/art4-4.png" alt="Fourth slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)"> 
+	  	    <div class="carousel-caption d-none d-md-block">
+    <h5>due</h5>
+    <p>duedue</p>
+  </div>
+    </div>
+	    <div class="carousel-item">
+      <img class="d-block img-fluid rounded mh-100 mw-100" src="img/artifacts/art4-5.png" alt="Fifth slide" onmouseover="fadeImg(this)" onmouseout="normalImg(this)"> 
+	    <div class="carousel-caption d-none d-md-block">
+    <h5>due</h5>
+    <p>duedue</p>
+  </div>	  
+    </div>	
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators6" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators6" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+			   </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>	
+  
+  
 <!-- EXIT-->	
   <section class="page-section cta" id="exit">
     <div class="container">
@@ -1329,7 +1795,43 @@ function hide() {
 
 
 
-<!--Modal 1 - protagonists-->
+<!--Modal 0 - entrance-->
+  <div class="portfolio-modal modal fade" id="entrancemodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Event entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify" id="special">The central event of our project is.</p>		
+				<p align="justify">The central event of our project is.</p>
+				<img src="img/map/map0.png" class="rounded" alt="">							
+				<hr class="m-0">
+			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
+			<br>					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-md" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Modal 1 - protagonists-->
   <div class="portfolio-modal modal fade" id="protagonistsmodal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -1349,7 +1851,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map1.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1421,7 +1923,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map3.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1438,7 +1940,7 @@ function hide() {
   </div>
   
 <!--Modal 4 - navigation-->
-  <div class="portfolio-modal modal fade" id="navigationlmodal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="navigationmodal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1457,7 +1959,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map4.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1493,7 +1995,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map5.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1529,7 +2031,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map6.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1565,7 +2067,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map7.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1602,7 +2104,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map7a.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1620,7 +2122,7 @@ function hide() {
 
 
 <!--Modal 8 - alternative-->
-  <div class="portfolio-modal modal fade" id="goingunderwateremodal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="goingunderwatermodal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1639,7 +2141,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map8.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1675,7 +2177,7 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map9.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1692,7 +2194,7 @@ function hide() {
   </div> 
 
 <!--Modal 10 - beloved-->
-  <div class="portfolio-modal modal fade" id="belovedrmodal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="belovedmodal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
@@ -1711,7 +2213,80 @@ function hide() {
                 <div class="subheading mb-3">The Entity</div>
 				<p align="justify" id="special">The central event of our project is.</p>		
 				<p align="justify">The central event of our project is.</p>
-				<img src="img/map/map2.png" class="rounded" alt="">							
+				<img src="img/map/map10.png" class="rounded" alt="">							
+				<hr class="m-0">
+			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
+			<br>					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-md" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+<!--Modal 11 - from 100 BC to 2000 AD-->
+  <div class="portfolio-modal modal fade" id="from100BCto2000ADmodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Event entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify" id="special">The central event of our project is.</p>		
+				<p align="justify">The central event of our project is.</p>
+				<img src="img/map/map11.png" class="rounded" alt="">							
+				<hr class="m-0">
+			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
+			<br>					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-md" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+<!--Modal 12 - Recovering the shipwreck-->
+  <div class="portfolio-modal modal fade" id="recoveringmodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Event entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify" id="special">The central event of our project is.</p>		
+				<p align="justify">The central event of our project is.</p>
+				<img src="img/map/map12.png" class="rounded" alt="">							
 				<hr class="m-0">
 			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
 			<br>					
@@ -1729,10 +2304,43 @@ function hide() {
 
 
 
-
-
-
-
+<!--Modal 13 - Exit-->
+  <div class="portfolio-modal modal fade" id="exitmodal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"> </div>
+			        <div class="modal-header">
+					<h4 class="modal-title">Event entity</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="modal-body">
+                <div class="subheading mb-3">The Entity</div>
+				<p align="justify" id="special">The central event of our project is.</p>		
+				<p align="justify">The central event of our project is.</p>
+				<img src="img/map/map13.png" class="rounded" alt="">							
+				<hr class="m-0">
+			<br> <p align="justify">The central Entity EVENT has relationships with all the other entities</p>
+			<br>					
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary btn-md" data-dismiss="modal"> <i class="fas fa-times"></i>
+						Close</button>
+						</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+  
   
   <footer class="footer text-faded text-center py-5">
     <div class="container">

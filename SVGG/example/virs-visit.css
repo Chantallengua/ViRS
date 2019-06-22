@@ -447,7 +447,13 @@ li {
 
 
 
-
+/* nuovo per le mappe che compaiono on onver */
+@media (min-width: 992px) {
+  .mapp-heading-img {
+    position: relative;
+    z-index: 5;
+	top: 25rem;
+  }
 
 
 @media (min-width: 992px) {
