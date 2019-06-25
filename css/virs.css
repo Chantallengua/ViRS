@@ -187,7 +187,7 @@ li {
 /* il secondo post-it */
 .intro2 {
   position: relative;
-  	min-height: 90vw;
+  	min-height: 98vw;
 }
 
 @media {
