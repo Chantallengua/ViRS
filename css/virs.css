@@ -63,6 +63,7 @@ li {
   color: rgba(255, 255, 255, 0.65);
   text-shadow: 3px 2px #1b1b1c;
   font-family: 'Source Sans Pro';
+  text-shadow: 10px 10px 10px #000223;
 }
 
 /* questo è '- Virtual Roman Shipwreck Museum -' */
@@ -71,6 +72,7 @@ li {
   font-weight: 600;
   line-height: 4rem;
   font-family: 'Source Sans Pro';
+  text-shadow: 10px 10px 10px #000223; 
 }
 
 

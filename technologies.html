@@ -28,12 +28,204 @@
   <!-- FontAwesome -->  
   <script src="https://kit.fontawesome.com/26e52bfea1.js"></script>
 
+
+
+ <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 14px;
+}
+
+.column3 {
+  float: left;
+  width: 33%;
+  padding: 14px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+i {
+color: #1B2F4F;
+}
+</style>
+
+<style>
+
+svg#fish {
+  top: 5em;
+}
+/* Fish Animation */
+svg.fish{
+  overflow:visible;
+}
+
+@-webkit-keyframes swim
+{
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+@keyframes swim
+{
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish{
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: swim 20s;
+	-webkit-animation: swim 20s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+svg #fish1,
+svg #fish2,
+svg #fish3,
+svg #fish4,
+svg #fish5,
+svg #fish6 {
+fill:#528484;
+  
+    -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+svg #fish2{
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+svg #fish3{
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+
+svg #fish4{
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+svg #fish5{
+	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+}
+
+svg #fish6{
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+
+/**/
+@-moz-keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  75% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+
+/*END Fish Animation*/
+</style>
+
+
 </head>
 
-
-
-
 <body>
+<svg class="fish" id="fish">
+  <path
+     id="fish2"
+     d="m 172.04828,20.913839 c 0.0489,-0.444179 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.475049 -1.4826,-0.932948 -2.2149,-1.401138 -1.6035,-1.028129 -3.29018,-1.969653 -4.89798,-3.079244 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.1509392 -2.27235,-0.286401 -4.81223,-0.168925 -6.72186,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.44486897 -2.77227,-1.44486897 0,0 1.30939,3.55000597 1.60951,4.26429497 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.0418502 2.13772,0.8129002 2.26463,1.7827212 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082841 -11.56925,0.884071 -4.3046,-1.38313 -7.37269,-4.129669 -10.46566,-7.2354952 1.43801,6.7252892 5.4382,10.6028562 5.6157,11.4226162 0.18607,0.905509 -0.45961,1.091584 -1.04099,1.682394 -1.28967,1.265655 -6.91566,7.731125 -6.93366,9.781383 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932949 0.0695,0.932949 -0.30784,1.137031 -0.18436,1.527189 0.22638,0.746016 1.44144,1.465449 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.07136 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.577091 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925922 z"
+     style="fill:#EDFDFF;fill-opacity:0.9"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+  <path
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccc"
+     inkscape:connector-curvature="0"
+     style="fill:#65759A;fill-opacity:0.9"
+     d="m 234.99441,42.953992 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.27235,-0.286401 -4.81223,-0.168925 -6.72186,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.91566,7.731125 -6.93366,9.781382 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+     id="fish3" />
+  <path
+     id="fish6"
+     d="m 200.07076,80.737109 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.27235,-0.286401 -4.81223,-0.168925 -6.72186,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.91566,7.731125 -6.93366,9.781382 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+     style="fill:#D1E0FF;fill-opacity:0.9"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+  <path
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccc"
+     inkscape:connector-curvature="0"
+     style="fill:#344567;fill-opacity:0.9"
+     d="m 77.275623,89.018799 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.272347,-0.286401 -4.812227,-0.168925 -6.721857,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.9156603,7.731122 -6.9336603,9.781382 1.6137903,-0.24782 3.5611503,-1.66096 4.9803003,-2.48586 1.58035,-0.90551 7.60593,-5.37303 9.29347,-6.065025 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527183 0.22638,0.74602 1.44144,1.46546 2.02282,1.98509 1.50918,1.29224 3.21044,2.42841 4.27373,4.15625 1.49203,2.40183 1.55805,4.999171 1.98251,7.677111 0.99469,-0.11148 2.0091,-2.17545 2.55961,-2.99264 0.51278,-0.7726 2.38639,-4.071361 3.09725,-4.275441 0.67227,-0.20408 2.75511,0.95867 3.50284,1.18076 2.85973,0.84806 5.644,1.35398 8.560317,1.35398 3.50799,0.009 12.726,0.2581 19.55505,-4.80023 0.75545,-0.56766 2.55703,-2.7311 2.55703,-2.7311 0,0 -0.37644,-0.57709 -1.04785,-0.79061 0.89779,-0.58481 1.8659,-1.211632 1.94993,-1.92592 z"
+     id="fish4" />
+  <path
+     id="fish5"
+     d="m 127.65312,60.900973 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89799,-3.079245 -4.67074,-3.24131 -10.22127,-4.404923 -15.76322,-5.150939 -2.27235,-0.286401 -4.812228,-0.168925 -6.721858,-1.574351 -1.48174,-1.081294 -4.04993,-4.828523 -6.86506,-6.456038 -0.4862,-0.290688 -2.77227,-1.444869 -2.77227,-1.444869 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.04185 2.13772,0.8129 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 -4.3046,-1.383131 -7.37269,-4.12967 -10.46566,-7.235496 1.43801,6.725289 5.4382,10.602857 5.6157,11.422617 0.18607,0.905508 -0.45961,1.091583 -1.04099,1.682394 -1.28967,1.265654 -6.91566,7.731125 -6.93366,9.781382 1.61379,-0.247815 3.56115,-1.660957 4.9803,-2.485862 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.643998,1.353976 8.560318,1.353976 3.50799,0.0094 12.726,0.258104 19.55506,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+     style="fill:#7F8FB5;fill-opacity:0.9"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+  <path
+      d="m 68.19699,20.522295 c 0.0489,-0.44418 -0.2178,-0.896934 -1.01784,-1.415715 -0.72801,-0.47505 -1.4826,-0.932949 -2.2149,-1.401138 -1.6035,-1.02813 -3.29018,-1.969653 -4.89798,-3.079245 C 55.39553,11.384887 49.845,10.221274 44.30305,9.4752582 42.0307,9.1888572 39.49082,9.3063332 37.58119,7.900907 36.09945,6.819613 33.53126,3.072384 30.71613,1.444869 30.22993,1.154181 27.94386,0 27.94386,0 c 0,0 1.30939,3.550006 1.60951,4.264295 0.69542,1.644664 -0.38158,3.063809 -0.83262,4.642447 -0.29069,1.0418502 2.13772,0.8129002 2.26463,1.782721 0.18179,1.432007 -4.15197,1.936211 -6.59152,2.417263 -3.65634,0.715146 -7.91635,2.082842 -11.56925,0.884072 C 8.52001,12.607667 5.45192,9.8611282 2.35895,6.755302 3.79696,13.480591 7.79715,17.358159 7.97465,18.177919 8.16072,19.083427 7.51504,19.269502 6.93366,19.860313 5.64399,21.125967 0.018,27.591438 0,29.641695 1.61379,29.39388 3.56115,27.980738 4.9803,27.155833 c 1.58035,-0.905509 7.60593,-5.373029 9.29347,-6.065023 0.38587,-0.160351 5.0549,-1.531476 5.09434,-0.932948 0.0695,0.932948 -0.30784,1.137031 -0.18436,1.527188 0.22638,0.746016 1.44144,1.46545 2.02282,1.985088 1.50918,1.292237 3.21044,2.42841 4.27373,4.156252 1.49203,2.401827 1.55805,4.999163 1.98251,7.677102 0.99469,-0.111473 2.0091,-2.17545 2.55961,-2.992638 0.51278,-0.772598 2.38639,-4.071359 3.09725,-4.275442 0.67227,-0.204082 2.75511,0.958673 3.50284,1.180763 2.85973,0.848057 5.644,1.353976 8.56032,1.353976 3.50799,0.0094 12.726,0.258104 19.55505,-4.800226 0.75545,-0.567658 2.55703,-2.731104 2.55703,-2.731104 0,0 -0.37644,-0.57709 -1.04785,-0.790605 0.89779,-0.584808 1.8659,-1.211633 1.94993,-1.925921 z"
+     id="fish1" />
+</svg>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
   <span></span>
@@ -71,6 +263,922 @@
 
 
 <button id="myBtn" class="animated fadeInUp" style="animation-delay: 9s;"><a href="#top" id="myBtnletters"><i class="fas fa-long-arrow-alt-up"></i> Back to top</a></button>
+
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">A journey under the sea</span>
+                <span class="section-heading-lower">About the TECHNOLOGIES</span>
+              </h2>
+			  
+<p class="mb-3" id="special" align="justify">
+This page shows how all the <b>virtual activities</b> of the <i>ViRS</i> Museum (did you miss them? Go to 
+<a href="../../index.html" target="_blank"><i>The VISIT</i></a> section) can really be implemented with the state-of-the-art <b>technologies</b>.
+</p>
+<p class="mb-3" align="justify">
+For each suggested item (projector, headphones, motion sensors, vr headset and so on) an <b>exact cost</b> is always indicated. 
+If possible, <b>two options</b> are proposed as well, one relating to the <b>high-cost solution</b> and one to the <b>low cost</b> one.
+</p>
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+    <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-13 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Overview</span>
+              <span class="section-heading-lower">Recall on our VIRTUAL ACTIVITIES</span>
+            </h2>
+                  <div class="row">
+
+<style>
+i:hover {
+  color: #9AA9D1;
+}
+</style>				
+
+		  <div class="col-lg-2 col-md-4">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <a href="#projections"><i class="fas fa-ticket-alt"></i></a>			
+          </span>
+          <h4>
+            Projections! Projections!
+          </h4>
+          <p class="mb-0">Some of them carrying an <b>emotional storytelling</b>. And some of them enriched with <b>motion sensors</b> activated by gestures.</p>
+		  <img src="SVGG/example/img/love.jpg" class="rounded" style="width:100%; margin-bottom:20px; margin-top:10px;" alt="">
+		  <img src="SVGG/example/img/tech/tech1.png" class="rounded" style="width:100%; margin-top:10px;" alt="">
+        </div>
+				
+				
+				<div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <a href="#projections"><i class="fas fa-anchor"></i></a>
+          </span>
+          <h4>
+            Captain Marcus' interactive questions 
+          </h4>
+          <p class="mb-0">In his cabin, over the real reconstruction of his ship, children and school groups can make live <b>Captain Marcus</b> asking him questions about <b>sea deities, navigation routes and ancient food</b> by means of a touch screen.</p>
+		    <img src="SVGG/example/img/tech/cabin2.jpg" class="rounded" style="width:100%; margin-top:10px;" alt="">
+        </div>
+		
+        <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <a href="#ar"><i class="fas fa-tablet-alt"></i></a>
+          </span>
+          <h4>
+            Reconstruction of broken artifacts with AR tablets
+          </h4>
+          <p class="mb-0">An experience that exploits the AR technology to get the 3D models of the reconstruction of two real artifacts - <b>helmets</b> and <b>armours</b> -, correlated with <b>information texts</b> and <b>images</b> related to them.</p>
+		  <img src="SVGG/example/img/tech/ar.png" class="rounded" style="width:100%; margin-top:10px;" alt="">
+        </div>
+		
+        <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <a href="#360"><i class="fas fa-video"></i></a>
+          </span>
+          <h4>
+            360° VR immersive theatre
+          </h4>
+          <p class="mb-0">An amazing 10-minutes <b>sinking experience</b> structured as a <b>full immersive projection</b> all around the visitors, situated on a walkable glass observation bridge. The projection sees the crew fighting against <b>huge waves</b> and <b>Neptune</b>'s capricious and unpredictable will.</p>
+		  <img src="SVGG/example/img/tech/360.png" class="rounded" style="width:100%; margin-top:10px;" alt="">
+        </div>
+		
+				<div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <a href="#fish-making"><i class="fas fa-fish"></i></a>
+          </span>
+          <h4>
+            Fish-making & Amphorae-making
+          </h4>
+          <p class="mb-0">An interactive customization game of fish and/or amphorae, made on touchscreen; here, <b>historical learning</b> is combined with <b>bio-marine learning</b>.</p>
+		  <img src="SVGG/example/img/underwater/fishmak.png" class="rounded" style="width:100%; margin-bottom:20px; margin-top:10px;" alt="">
+		  <img src="SVGG/example/img/underwater/dresselreal.png" class="rounded" style="width:100%; margin-top:10px;" alt="">
+        </div>
+		
+				<div class="col-lg-2 col-md-4 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <a href="#vr"><i class="fas fa-trophy"></i></a>
+          </span>
+          <h4>
+            1 treasure hunt for 4 visitors with 4 VR HMD
+          </h4>
+          <p class="mb-0">The core of <i>ViRS</i>, a high level game for up to <b>four players</b>, each of them provided with an HTC Vive VR headset. <b>Goal</b>: finding Captain Marcus' <b>wedding ring</b> for Livia.</p>
+		  <img src="SVGG/example/img/underwater/grid.jpg" class="rounded" style="width:100%; margin-bottom:20px; margin-top:10px;" alt="">
+		  <img src="SVGG/example/img/underwater/vr9.jpg" class="rounded" style="width:100%; margin-top:10px;" alt="">
+        </div>
+		
+		
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+    <section class="page-section cta" id="projections">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-13 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Technologies (1/5)</span>
+              <span class="section-heading-lower">PROJECTIONS</span>
+			  </h2>
+			  </div>
+			  </div>
+			  </div>
+			  </div>
+			  </section>
+			  
+			  
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Starting with the basics</span>
+                <span class="section-heading-lower">1. PROJECTIONS</span>
+              </h2>			  
+<p class="mb-3" align="justify">
+<b>1.a. Projections without motion sensors <br></b>
+<hr>
+</p>
+<p class="mb-3" id="special"  align="justify">
+Projections without motion sensors are the simplest kinds of technologies present in <i>ViRS</i> Museum. They feature an easy <b>data acquisition</b> and <b>processing</b>,
+which varies depending on the content of the projection. There can be:
+<ul>
+<li align="justify"><b>real actors</b> in <b>real sets</b>, in the case of:
+<ul>
+<li align="justify"><a href="SVGG/example/visit.html#presentation">first storytelling corridor</a>: <b>Marcus and Livia's presentation</b> inside their <b>villa</b>;
+<li align="justify"><a href="SVGG/example/visit.html#building">room about the construction of the ship</a>: Marcus, Livia and seamen building the ship, in the <b>Roman-like port</b>;
+<li align="justify"><a href="SVGG/example/visit.html#farewell">second storytelling corridor</a>: Marcus and Livia's <b>farewell</b>, in an undefined marble/stone place by the sea;
+<li align="justify"><a href="SVGG/example/visit.html#navigation">Captain Marcus' cabin</a>: Marcus' movements while answering the children's questions asked by means of a tablet;
+<li align="justify"><a href="SVGG/example/visit.html#sinking">360° immersive theatre</a>; all the projections that will be synchronized to recreate a 360° full immersive experience about the <b>sinking</b> of the ship;
+<li align="justify"><a href="SVGG/example/visit.html#underwater">last Captain Marcus' speech</a>; Capatain Marcus, floating in the water leaning against a piece of wood, asks the <b>VR-players</b> to recover his <b>wedding ring</b>;
+<li align="justify"><a href="SVGG/example/visit.html#beloved">last storytelling corridor</a>: Livia <b>alone</b>, home, watching the sea in the exact setting portrayed in the 'Farewell' corridor, as promised to her Marcus.
+</ul>
+</ul>
+
+<div class="row">
+  <div class="column">
+ <img src="SVGG/example/img/tech/techlove.png" class="rounded right" style="width:100%;" alt="">
+ <figcaption style="text-align:center;"><i>Example of real actors projection</i></figcaption>
+ </div>
+ <div class="column">
+ <img src="SVGG/example/img/port.png" class="rounded left" style="width:100%; height:89%" alt="">
+ <figcaption style="text-align:center;"><i>Example of real set projection</i></figcaption>
+</div>
+</div>	
+
+
+<ul class="mt-2">
+<li align="justify">or plain <b>nature</b>, without actors, in the case of:
+<ul>
+<li align="justify"><b>cloud videos</b> in all the rooms and corridors that feature the presence of ceiling projections of sky (<a href="SVGG/example/visit.html#building">Port room</a>, <a href="SVGG/example/visit.html#navigation">Navigation Room</a>, <a href="SVGG/example/visit.html#rain">Storm corridor</a>);
+<li align="justify"><b>calm sea video</b> in the <a href="SVGG/example/visit.html#navigation">Navigation room</a>, where visitors have to briefly walk on calm sea before going up on the wood and glass real reconstruction of the ship;
+<li align="justify"><b>storm video</b> in the <a href="SVGG/example/visit.html#rain">Storm corridor</a>, on the floor, on the ceiling and on the walls;
+<li align="justify"><b>underwater video</b> in the <a href="SVGG/example/visit.html#underwater">Underwater room</a>, where every 15 minutes a shark or a manta crosses the ceiling over the visitors.
+</ul>
+</ul>
+
+<div class="row">
+  <div class="column mb-2">
+ <img src="SVGG/example/img/underwater/ceiling4-1.png" class="rounded right" style="width:100%;" alt="">
+ <figcaption style="text-align:center;"><i>Example of nature projection</i></figcaption>
+ </div>
+ <div class="column">
+ <img src="SVGG/example/img/sea.png" class="rounded left" style="width:100%" alt="">
+ <figcaption style="text-align:center;"><i>Example of nature projection</i></figcaption>
+</div>
+</div>	
+
+<p class="mb-3" align="justify">
+(All the other projections that were not mentioned above are part of the following section, related to '<b>Motion sensor projections</b>').
+</p>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+	  
+<p class="mb-3" align="justify">
+<b>1.b. Motion sensors projections <br></b>
+<hr>
+</p>
+<p class="mb-3" id="special"  align="justify">
+In the case of <b>motion sensors projections</b>, the <b>data acquisition</b> of the setting/background and of the characters/animals (in the first case, the crew of the ship, and in the latter option, the fish)
+remains the same as in the previous section, related to simple and plain projections.
+</p>
+<p class="mb-3" align="justify">
+In <i>ViRS</i> Museum, visitors can interact with motion sensors projections in three areas:
+<ul>
+<li>in the <a href="SVGG/example/visit.html#navigation">Navigation Room</a>: on board of the wood and glass real reconstruction of the ship, visitors will be surronded by two projections on the <b>sides of the ship</b>
+(precisely, on the two walls, one on the left and one on the right), in order to continue the <b>spatial projection</b> of the ship to give a bigger and more real sense of spatiality. 
+<b>Seamen</b> in the foreground will cross these animations: motion sensors will detect if a visitor approaches to one of them, and in this case, will
+start a brief <b>scene</b> (a <b>line</b> or a joke directed to the visitor, for example);
+<li>in the <a href="SVGG/example/visit.html#underwater">Underwater Room</a>: <b>fish escape</b> of the fish dynamically created by means of the "<b>Fish-making</b>'
+virtual activities; these fish are placed in an environment similar to the one really existent along the Albenga coast, that will be shown on all the <b>four
+walls</b> of the room;
+<li>in the <a href="SVGG/example/visit.html#underwater">Underwater Room</a>: another <b>fish escape</b> similar to the previous one, but made with default fish and 
+placed on the floor of the room.
+</ul>
+
+<div class="row mb-2">
+ <div class="column3 ">
+ <img src="SVGG/example/img/gif/pesci.gif" class="rounded left" style="width:100%" alt="">
+ <figcaption style="text-align:center;"><i>Fish escape on the walls</i></figcaption>
+</div>
+  <div class="column3">
+ <img src="SVGG/example/img/gif/storytelling3.gif" class="rounded right" style="width:100%;" alt="">
+ <figcaption style="text-align:center;"><i>Seamen motion sensors</i></figcaption>
+ </div>
+ <div class="column3">
+ <img src="SVGG/example/img/gif/pesci2.gif" class="rounded left" style="width:100%" alt="">
+ <figcaption style="text-align:center;"><i>Fish escape on the floor</i></figcaption>
+</div>
+</div>	
+
+<p class="mb-3" align="justify">
+The following section shows and explains the different kinds of <b>technologies</b> suggested for the creation of the two previous types of projections.
+</p>
+
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+  
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Buying suggested items (1/3)</span>
+                <span class="section-heading-lower">PROJECTORS</span>
+              </h2>			    
+<p class="mb-3" align="justify">
+<b>Low-cost</b>: <a href="https://www.amazon.it/Epson-V11H715041-EH-TW7300-Videoproiettore/dp/B01JD039NM/ref=asc_df_B01JD039NM/?tag=googshopit-21&linkCode=df0&hvadid=103303743299&hvpos=1o1&hvnetw=g&hvrand=16332414486036988589&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1008337&hvtargid=aud-544467755264:pla-276662068501&psc=1" target=_blank">
+Epson EH-TW7300</a>, with 4K technology, contrast ratio of 160000:1 and 2300 Lumens, + compatible <a href="https://www.amazon.it/Epson-V12H003B22-Supporto-montaggio-soffitto/dp/B001AFDDIA/ref=pd_sim_23_3/261-0870263-5074838?_encoding=UTF8&pd_rd_i=B001AFDDI0&pd_rd_r=7529d7f7-7b4f-11e9-9b6c-0f9ea93917a8&pd_rd_w=U00Kk&pd_rd_wg=5oeEH&pf_rd_p=56b3c50e-3915-4b91-b522-56dd1dac87e6&pf_rd_r=9Z134SJC2ACQSW5QXKMX&refRID=9Z134SJC2ACQSW5QXKMX&th=1" target="_blank">
+Support for ceiling mounting</a>.
+<br>
+<b><i class="fas fa-money-bill-wave" ></i></b> Epson EH-TW7300: <b>1,895.64€</b>. <br>
+<b><i class="fas fa-money-bill-wave"></i></b> Support: <b>156.65€</b>.
+</p>
+
+<div class="row">
+  <div class="column mb-2">
+ <img src="SVGG/example/img/tech/mount1.png" class="rounded right" style="width:50%;" alt="">
+ <figcaption style="text-align:center;"><i>Epson EH-TW7300</i></figcaption>
+ </div>
+ <div class="column">
+ <img src="SVGG/example/img/tech/proj1.png" class="rounded left" style="width:50%" alt="">
+ <figcaption style="text-align:center;"><i>Support for ceiling mounting</i></figcaption>
+</div>
+</div>	
+
+<hr>
+
+<p class="mb-3" align="justify">
+<b>High-cost</b>: <a href="https://www.projectorcentral.com/Optoma-EH505e.htm" target="_blank">Optoma EH505E</a>, with 5000 Lumens, full lens shift, 
+RoomView® compatible, CMS (Colour Management System) + compatible <a href="https://www.amazon.it/OPTOMA-TECHNOLOGY-Universal-Ceiling-Kit/dp/B07CQMF57X/ref=sr_1_fkmr1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=supporto+optoma+projector+ceiling&qid=1558392816&s=gateway&sr=8-1-fkmr1" target="_blank">Support for ceiling mounting</a>.
+<br>
+<b><i class="fas fa-money-bill-wave"></i></b> Optoma EH505E: <b>3,441.53€</b>. <br>
+<b><i class="fas fa-money-bill-wave"></i></b> Support: <b>81.25€</b>.
+</p>
+
+<div class="row">
+  <div class="column mb-2">
+ <img src="SVGG/example/img/tech/mount2.png" class="rounded right" style="width:50%;" alt="">
+ <figcaption style="text-align:center;"><i>Optoma EH505</i></figcaption>
+ </div>
+ <div class="column">
+ <img src="SVGG/example/img/tech/proj2.png" class="rounded left" style="width:50%" alt="">
+ <figcaption style="text-align:center;"><i>Support for ceiling mounting</i></figcaption>
+</div>
+</div>
+
+
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Buying suggested items (2/3)</span>
+                <span class="section-heading-lower">MOTION SENSORS</span>
+              </h2>			    
+<p class="mb-3" align="justify">
+<b>Low-cost</b>: <a href="https://orbbec3d.com/product-astra-pro/" target="_blank">Orbbec Astra Pro</a>, a device that brings depth sensing to a connected computer, for providing computer 
+vision that enables face recognition, gesture recognition, human body tracking, three-dimensional measurement and environment perception.
+<br>
+<b><i class="fas fa-money-bill-wave"></i> $149.9</b>.
+<br>
+ <img src="SVGG/example/img/tech/motion1.png" class="rounded center" style="width:30%;" alt="">
+  <figcaption style="text-align:center;"><i>Orbbec Astra Pro</i></figcaption>
+</p>
+
+
+
+<hr>
+
+<p class="mb-3" align="justify">
+<b>High-cost</b>: <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose" target="_blank">Open Pose</a>: software hosted on GitHub that can use any plain
+ webcam to track in real-time the human body, face, and fingers of many persons with very high accuracy. 
+ <br>
+<b><i class="fas fa-money-bill-wave"></i> Free</b> for personal use, <b>$25,000/year</b> for commercial use.
+<br>
+</p>
+
+<div class="row mb-2">
+ <div class="column3">
+ <img src="SVGG/example/img/tech/motion3.png" class="rounded left" style="width:100%" alt="">
+ <figcaption style="text-align:center;"><i>Open Pose: example</i></figcaption>
+</div>
+  <div class="column3">
+ <img src="SVGG/example/img/tech/motion4.gif" class="rounded left" style="width:100%" alt="">
+ <figcaption style="text-align:center;"><i>Open Pose: how it works</i></figcaption>
+</div>
+  <div class="column3 ">
+ <img src="SVGG/example/img/tech/motion2.png" class="rounded right" style="width:100%;" alt="">
+ <figcaption style="text-align:center;"><i>Detection of many people</i></figcaption>
+ </div>
+</div>
+
+
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+  
+  
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Buying suggested items (3/3)</span>
+                <span class="section-heading-lower">DOME CAMERAS</span>
+              </h2>			    
+<img src="SVGG/example/img/tech/dome.png" class="rounded right" style="width:20%;" alt="">
+  <p class="mb-3" align="justify">
+<a href="https://orbbec3d.com/product-astra-pro/" target="_blank">LEFTEK 5MP 3.6MM P2P Pan/Tilt IP</a>, with 5 megapixel 
+camera, color: 0.005Lux, viewing angle 100° and range and pan speed: 355 ° continuous rotation.
+<br>
+<b><i class="fas fa-money-bill-wave"></i> 95.59€</b>.
+<br>
+</p>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+  
+  
+
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Projectors + Motion sensors + Dome Cameras</span>
+                <span class="section-heading-lower">DISPOSITION</span>
+              </h2>			    
+<p class="mb-3" id="special" align="justify">
+In this section a disposition of <b>projectors</b>, <b>motion sensors</b> and <b>dome cameras</b> is armonized and placed in the context of the biggest
+room of <i>ViRS</i> Museum, the <a href="SVGG/example/visit.html#underwater" target="_blank">Underwater Room</a>.
+</p>
+<p class="mb-3" align="justify">
+
+Necessary articles:
+<ul>
+<li align="justify"><b>12 HD dome cameras</b> on the ceiling, connected to a central computer where <b>OpenPose</b> is running for the body tracking.
+<li align="justify"><b>12 projectors</b> immediately near the dome cameras, to project the ceiling with sands and escaping fish 
+<li align="justify">other <b>12 projectors</b> (+ <b>4 for the corners</b>) are placed to project moving fish on the walls.
+The central computer is connected to the <b>Fish-making game</b> (whose technology is presented in the <a href="#fish-making">following section</a>).
+</ul>
+</p>
+<img src="SVGG/example/img/tech/room1.png" class="rounded center" style="width:20%" alt="">
+ <figcaption style="text-align:center;" class="mt-3 mb-4"><i>Disposition of projectors and dome cameras for the ceiling</i></figcaption>
+
+ <img src="SVGG/example/img/tech/room2.png" class="rounded center" style="width:20%" alt="">
+ <figcaption style="text-align:center;" class="mt-3 mb-3"><i>Disposition of projectors and dome cameras for the walls</i></figcaption>
+
+ 
+ <p class="mb-3" align="justify">
+The same dynamic applies to the other room that features projectors with motion sensors: the <b>trio</b> 'projectors + motion sensors + dome cameras' (+ a
+central computer, of course) must be positioned, therefore, also in the <a href="SVGG/example/visit.html#navigation">Navigation Room</a>.
+</p>
+
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  
+     <section class="page-section cta" id="fish-making">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-13 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Technologies (2/5)</span>
+              <span class="section-heading-lower">FISH-MAKING</span>
+			  </h2>
+			  </div>
+			  </div>
+			  </div>
+			  </div>
+			  </section>
+			  
+			  
+			  
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">A matter of touch screens</span>
+                <span class="section-heading-lower">FISH-MAKING</span>
+              </h2>						  
+<p class="mb-3" align="justify">
+<b>Low cost</b>: 
+<a href="https://www.amazon.com/Gechic-15-6-Inch-Portable-Touchscreen-Monitor/dp/B07FXXQYW8/ref=sr_1_6?keywords=horizontal%2Btouch%2Bscreen&qid=1562873737&s=gateway&sr=8-6&th=1" target="_blank">
+GeChic 1503E 15.6 inch FHD 1080p Portable Monitor</a>:  full HD 1920x1080 and an excellent 'hands-on' mobile display, light-weighted and extra-slim.
+<br>
+<b><i class="fas fa-money-bill-wave"></i> $249.99</b>.
+</p>
+
+<div class="row mb-2">
+ <div class="column">
+ <img src="SVGG/example/img/tech/monitor2.png" class="rounded right" style="width:60%" alt="">
+</div>
+  <div class="column">
+ <img src="SVGG/example/img/tech/monitor.png" class="rounded left" style="width:60%" alt="">
+</div>
+</div>
+
+<p class="mb-3" align="justify">
+To minimize the expense, the touch screen should be mounted on a simple piece of <b>furniture</b> made of <b>wood</b> or <b>plastic</b>. 
+No chair should be provided, as the game is done from standing.
+</p>
+
+<hr>
+<p class="mb-3" align="justify">			  
+ <img src="SVGG/example/img/tech/kiosk3.png" class="rounded right mt-2" style="width:30%" alt="">
+ <b>High cost</b>: <a href="http://www.touchmagix.com/products/multi-touch" target="_blank">MagixKiosk™</a>: can be adjusted easily into four form factors (good for children and for visitors in wheelchairs).<br>
+Slim and robust.<br>
+32’’HD high brightness LED display.<br>
+Up to 40 simultaneous touch point detection.<br>
+<b><i class="fas fa-money-bill-wave"></i> 8319,29 €</b>.
+</p>
+ <img src="SVGG/example/img/tech/kiosk.png" class="rounded center" style="width:80%" alt="">		  
+ 			  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+ 
+ 
+ 
+ 
+ 
+     <section class="page-section cta" id="360">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-13 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Technologies (3/5)</span>
+              <span class="section-heading-lower">360</span>
+			  </h2>
+			  </div>
+			  </div>
+			  </div>
+			  </div>
+			  </section>
+			  
+
+
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Audio, fans, nebulizer and more</span>
+                <span class="section-heading-lower">SYNCHRONIZATION</span>
+              </h2>			    
+<img src="SVGG/example/img/gif/a.gif" class="rounded center mb-3" style="width:50%" alt="">			  
+<p class="mb-3" id="special" align="justify">
+The 360° VR immersive experience without headsets needs outstanding projectors, loudspeakers and special effects made by hidden fans.
+<br>
+For a total number of approx. 10 projectors.
+</p>
+
+<hr>
+
+<p class="mb-3" align="justify">
+<img src="SVGG/example/img/tech/roomview2.png" class="rounded right mt-2" style="width:30%" alt="">
+<b>RoomView</b>
+</p>
+<p class="mb-3" align="justify">
+
+<a href="https://www.crestron.com/resources/get-roomview" target="_blank">Creston RoomView ®</a> is a software that allows to <b>synchronize</b>, turn on / off, monitor, manage and control up to 250 projectors 
+simultaneously from one computer.<br>
+<b><i class="fas fa-money-bill-wave"></i> Free</b> of charge for up to 25 projectors.<br>
+<b><i class="fas fa-money-bill-wave"></i> 5,000$</b> for more.
+<br>
+Other software that guarantees multimedia synchronization are available on the market, but this is free under 25 projectors, 
+the maximum number that goes beyond that estimated for this room.
+</p>
+
+<hr>
+
+<p class="mb-3" align="justify">
+
+<b>Audio (ceiling)</b>
+</p>
+<p class="mb-3" align="justify">
+<b>Built-in speakers</b> that are <b>hidden</b> on the ceiling and on the walls, flat and white like them so that 
+they mimetize and can let projections pass over them.
+</p>
+<p class="mb-3" align="justify">
+<b>Low-cost</b>: <a href="http://www.apart-audio.com/Category/Details5?cat2=APART&cat3=01.LOUDSPEAKERS&cat4=1000_BUILTIN&cat5=1005_CM_ROUND_DESIGN_SERIES&productcode=CMX20DT" target="_blank">Apart CMX20DT</a>:
+a two-way built-in loudspeaker that produces a deep and warm sound ideal for speech and music, with thin edge grille with neodymium magnets in order to create an easy and discreet installation.
+<br>
+<b><i class="fas fa-money-bill-wave"></i> 94€</b>.
+
+<div class="row mb-2">
+ <div class="column">
+ <img src="SVGG/example/img/tech/audio1.png" class="rounded right" style="width:50%" alt="">
+</div>
+  <div class="column">
+ <img src="SVGG/example/img/tech/audio2.png" class="rounded left" style="width:50%" alt="">
+</div>
+</div>
+
+<hr>
+
+<p class="mb-3" align="justify">
+
+<b>Audio (walls)</b>
+</p>
+<p class="mb-3" align="justify">
+<b>Low-cost</b>: <a href="https://www.amazon.it/Indiana-Line-Diffusori-Incasso-Rettangolare/dp/B00AHW6VO0/ref=pd_rhf_dp_s_cr_simh_1_5/261-0870263-5074838?_encoding=UTF8&pd_rd_i=B00AHW6VO0&pd_rd_r=4a709248-719c-4c87-bdca-892a4076ea6d&pd_rd_w=rD2QN&pd_rd_wg=gyOlH&pf_rd_p=fba8d698-50f2-43ec-8c3a-d307175d34d3&pf_rd_r=8M3SYW34MWKDXGHE2ZSD&psc=1&refRID=8M3SYW34MWKDXGHE2ZSD" target="_blank">Indiana Line Tesi Q</a>.
+<br>
+<b><i class="fas fa-money-bill-wave"></i> 190€</b>.
+
+</p>
+<p class="mb-3" align="justify">
+
+
+<b>High-cost</b>: <a href="https://www.amazon.it/dp/B013WQIDSY/ref=emc_b_5_t" target="_blank">Bose ® Virtually Invisible 591</a>.
+<br>
+<b><i class="fas fa-money-bill-wave"></i> 622,22€</b>.
+
+<div class="row mb-2">
+ <div class="column">
+ <img src="SVGG/example/img/tech/audio5.png" class="rounded right" style="width:80%" alt="">
+</div>
+  <div class="column">
+ <img src="SVGG/example/img/tech/audio6.png" class="rounded left" style="width:80%" alt="">
+</div>
+</div>
+
+<hr>
+<p class="mb-3" align="justify">
+Moreover, regarding special effects, little hidden <b>fans</b> also suggest the presence of the wind, while <b>nebulizers</b>
+can spray water to simulate the fall of sea wave drops.
+</p>
+
+
+			              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  
+			  
+ 
+ 
+     <section class="page-section cta" id="ar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-13 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Technologies (4/5)</span>
+              <span class="section-heading-lower">AR: Augmented Reality</span>
+			  </h2>
+			  </div>
+			  </div>
+			  </div>
+			  </div>
+			  </section>
+			  
+			  
+			  
+			  
+
+  <section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Information layers: text and images</span>
+                <span class="section-heading-lower">AUGMENTED REALITY</span>
+              </h2>			    
+<img src="SVGG/example/img/ar2.png" class="rounded left mb-3" style="width:45%" alt="">			  
+<p class="mb-3" id="special" align="justify">
+The user interface of this experience is designed according to a <b>user centered design</b> (<b>UCD</b>) approach in order to make it easy to 
+use and intuitive. 
+The AR interface superimposes an <b>information layer</b> over the images captured by the tablet camera. It includes the <b>3D models</b> of the 
+<b>reconstructed artifacts</b> (helmets or armors), <b>text</b> (historical information about them) and <b>images</b> (Roman soldiers with 
+full-armors and helmets).
+</p>
+<p class="mb-3" align="justify">
+This AR experience is <b>marker-based</b>: it uses a <b>two-dimensional pre-defined screen</b> placed near the artifact 
+(helm or armour) in order to help guide the <b>camera pose estimation process</b>.
+</p>
+<p class="mb-3" align="justify">
+<img src="SVGG/example/img/tech/qr.png" class="rounded right mb-3" style="width:20%" alt="">			
+The <b>workflow</b> is divided in three fundamental steps:
+<ol>
+<li><b>Capturing</b> the video <b>input</b> from the camera;
+<li>Adding the <b>3D graphics</b> to the scene;
+<li>Showing the <b>augmented frames</b> as a video stream.
+</ol>
+</p>
+
+			 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+
+
+    <section class="page-section cta" id="vr">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-13 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Technologies (5/5)</span>
+              <span class="section-heading-lower">VR</span>
+			  </h2>
+			  </div>
+			  </div>
+			  </div>
+			  </div>
+			  </section>		
+
+
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Data acquisition + processing</span>
+                <span class="section-heading-lower">VR TREASURE HUNT</span>
+              </h2>			    
+<img src="SVGG/example/img/tech/photogrammetry.gif" class="rounded right mt-4" style="width:50%" alt="">			  
+<p class="mb-3" id="special" align="justify">
+<b>Mapping</b> from underwater images is difficult due to inconsistent lighting conditions, the change of refractive index and the color loss due to the 
+limited penetration distance of certain wavelengths. 
+</p>
+<p class="mb-3" align="justify">
+<b>Strobes</b> and <b>underwater lights</b>, because of the depth (42 mt) are thus suggested for <b>photogrammetry</b> with cameras protected by cases.
+</p>
+<p class="mb-3" align="justify">
+<b>Metal tags</b> can be used as <b>Ground Control Points</b> (<b>GCPs</b>) for georeferencing the project and help the software to find and match 
+identical points in different images.
+</p>
+<img src="SVGG/example/img/tech/qr2.png" class="rounded right mb-2 mt-2" style="width:35%" alt="">
+<p class="mb-3" align="justify">
+Suggested use of:
+<ul>
+<li><a href="https://www.capturingreality.com/Product" target="_blank">RealityCapture</a> (<b>4,000€</b>);
+<li><a href="https://www.agisoft.com/" target="_blank">Metashape</a> (<b>3,499€</b>);
+<li><a href="https://www.hexagongeospatial.com/products/power-portfolio/imagine-photogrammetry" target="_blank">IMAGINE Photogrammetry</a> (<b>integrated collection of software tools</b>).
+</ul>
+</p>
+<p class="mb-3" align="justify">
+
+In particular, <b>RealityCapture</b> is the state-of-the-art all-in-one <b>photogrammetry software</b> solution which <b>automatically</b> extracts 
+accurate <b>3D models</b> from a set of images and / or laser-scans.
+</p>
+<img src="SVGG/example/img/tech/vr3.png" class="rounded center mt-2 mb-2" style="width:55%; opacity:0.8;" alt="">
+<p class="mb-3" align="justify">
+Workflow:
+<ol>
+<li><b>scanning</b> the imagery (creating a digital version);
+<li><b>image alignment</b> / automatic calibration;
+<li>solving the <b>orientation</b> parameters;
+<li><b>triangulating</b> the images;
+<li>calculating a <b>polygon mesh</b>;
+<li><b>colouring</b>, texturing.
+</ol>
+</p>
+
+<div class="row mb-2">
+ <div class="column">
+ <img src="SVGG/example/img/tech/vr1.png" class="rounded right" style="width:100%" alt="">
+</div>
+  <div class="column">
+ <img src="SVGG/example/img/tech/vr2.png" class="rounded left" style="width:100%" alt="">
+</div>
+</div>
+
+<hr>
+<p><b>VR Authoring</b></p>
+<p class="mb-3" align="justify">
+This is a key step in the definition of the VR treasure hunt: it is the moment in which arises the
+prototyping of virtual reality environment for the game, among with the building and the reconfiguring of the VR space.
+
+<ul>
+<img src="SVGG/example/img/tech/vr-vision.png" class="rounded right mt-4" style="width:50%" alt=""><li align="justify"><a href="https://unity.com/" target="_blank">Unity 3D</a> (<b>$1500</b>): a 
+real-time 3D development platform and most used tool for VR development, that has a direct VR mode to preview the work in an HMD.
+<li align="justify"><a href="https://unity.com/" target="_blank">Unreal Engine (UE4)</a> (<b>$3,000</b>):
+Tools that scale from simple to extremely detailed scenes, environments and characters;
+Frequent updates for the latest hardware and software including also our HTC Vive.
+<li align="justify"><a href="https://unity.com/" target="_blank">Blender</a> (<b>open source</b>).
+</ul>
+
+
+</p>
+
+
+<hr>
+
+<p><b>Devices</b></p>
+<p class="mb-3" align="justify">
+4 <a href="https://www.vive.com/us/product/vive-virtual-reality-system/" target="_blank">HTC VIVE VR headsets</a>. It has been chosen this device because 
+it is the state-of-the-art for what regards VR headsets and because in the controller it has one big button to grab and release objects (rocks, the ring, 
+woods).
+<br>
+<b><i class="fas fa-money-bill-wave"></i> 739€</b> + <b>140€</b> for each controller.
+</p>
+
+<p class="mb-3" align="justify">
+4 <a href="https://www.amazon.it/Bose-Cuffie-QuietComfort-Wireless-integrata/dp/B0756CYWWD/ref=asc_df_B0756CYWWD/?tag=googshopit-21&linkCode=df0&hvadid=85510012103&hvpos=1o5&hvnetw=g&hvrand=8932333305917522995&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1008337&hvtargid=aud-544467755264:pla-364392921534&psc=1" target="_blank">
+Bose QuietComfort 35</a> headphones, which are light (approx. 200 gr), with <b>bluethooth</b> (essential condition, with four blind people walking), 
+adjustable also for children and with up to 20 hours of autonomy. They also completely <b>suffocate sounds</b> from external areas.
+<br>
+<b><i class="fas fa-money-bill-wave"></i> 379€</b>.
+
+<div class="row mb-2">
+ <div class="column">
+ <img src="SVGG/example/img/tech/htc.png" class="rounded right" style="width:100%" alt="">
+ <figcaption align="center"> <i>HTC VIVE VR headsets</i></figcaption>
+</div>
+  <div class="column">
+ <img src="SVGG/example/img/tech/bose.png" class="rounded left" style="width:100%" alt="">
+ <figcaption align="center"> <i>Bose QuietComfort 35</i></figcaption>
+</div>
+</div>
+
+</p>
+			 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  			
+
+
+
+    <section class="page-section cta" id="vr">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-13 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Technologies (extra)</span>
+              <span class="section-heading-lower">3D model ship</span>
+			  </h2>
+			  </div>
+			  </div>
+			  </div>
+			  </div>
+			  </section>  
+			  
+
+
+<section class="page-section about-heading">
+    <div class="container">
+      <div class="about-heading-content">
+        <div class="row">				
+          <div class="col-xl-9 col-lg-10 mx-auto">
+		  
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Not really a virtual activity</span>
+                <span class="section-heading-lower">3D model ship</span>
+              </h2>	
+<p align="justify" id="special" class="mb-3">
+<b>Softwares</b> are also necessary for one of the analog/<b>traditional experiences</b>: the little <b>touchable 3D model</b> of the ship. 
+</p>
+<p align="justify" class="mb-3">
+Steps:
+<ol>
+<li align="justify"><b>3D Modeling / CAD</b> (Computer-Aided Design) <b>software</b>: creation of a 3D model of an object;
+<ul>
+<li><b>Free</b>: <a href="https://www.blender.org/" target="_blank">Blender</a>, <a href="https://www.autodesk.it/solutions/123d-apps" target="_blank">Autodesk 123D</a>. 
+<li><b>Priced</b>: <a href="https://www.autodesk.it/products/autocad/overview" target="_blank">AutoCAD</a> (2141€/year), <a href="https://www.autodesk.it/products/3ds-max/overview" target="_blank">3D Studio Max</a> (2049€/year), <a href="https://www.rhinoceroshop.it/shop/licenza-rhinoceros-6-windows/?gclid=Cj0KCQjwoInnBRDDARIsANBVyATZQU6vKBmB_vHX_TlZZlBLm4YkJ3YAD5fI-_3fvfO1X-zFuhbJGPIaAn5gEALw_wcB" target="_blank">Rhinoceros</a> (Windows: 995€, Mac: 695€).
+</ul>
+<li align="justify"><b>Slicing / CAM </b>(Computer-Aided Manufacturing) <b>software</b>: conversion of 3D model in mechanical controls, which allow the 3D printer to understand how it should move;
+<ul>
+<li><b>Free</b>: <a href="https://slic3r.org/" target="_blank">Slic3r</a>, <a href="https://ultimaker.com/software/ultimaker-cura" target="_blank">Cura</a>. 
+<li><b>Priced</b>: <a href="https://www.simplify3d.com/" target="_blank">Simplify 3D</a> (149$ or 134€).
+</ul>
+<li align="justify"><b>Client software</b>: it is the 3D printer control software used to give printing instructions and to set the machine.
+<ul>
+<li><b>Free</b>: <a href="https://www.repetier.com/" target="_blank">Repetier-Host</a>, <a href="https://www.pronterface.com/" target="_blank">Printrun</a>.
+</ul>
+</ol>
+
+<img src="SVGG/example/img/tech/ship.png" class="rounded center mt-2" style="width:50%" alt="">	
+			  
+			 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  			  
 
 <!--
   <section class="page-section">
