@@ -653,3 +653,38 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
+
+
+
+
+/* taxonomy su index.html */
+.introlast {
+  position: relative;
+  	min-height: 44vw;
+}
+
+@media {
+  .introlast .introlast-img {
+    width: 55%;
+    float: left;
+  }
+  .introlast .introlast-text {
+    right: 0;
+    width: 60%;
+    margin-top: 3rem;
+    position: absolute;
+	min-width: 60vw;
+  }
+  .introlast .introlast-text .introlast-button {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: -2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .introlast .introlast-text {
+    width: 45%;
+  }
+}
