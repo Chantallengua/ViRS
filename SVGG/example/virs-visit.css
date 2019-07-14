@@ -53,7 +53,8 @@ margin: 0px 15px 15px 0px;
     }
 	
 #myBtnletters {
-color: black; font-family: 'Raleway';
+color: black; 
+font-family: 'Raleway';
 }	
 
 
@@ -578,11 +579,6 @@ li {
 
 /* FISH */
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 svg#fish {
   top: 5em;
 }
@@ -594,16 +590,17 @@ svg.fish{
 
 @-webkit-keyframes swim
 {
-	0% {margin-left: -235px}
-	90% {margin-left: 100%;}
-	100% {margin-left: 100%;}
+	0% {margin-left: -235px; opacity:1;}
+	90% {margin-left: 60%; opacity:0.5;}
+	100% {margin-left: 80%; opacity:0;}
 }
 
 @keyframes swim
 {
-	0% {margin-left: -235px}
-	70% {margin-left: 100%;}
-	100% {margin-left: 100%;}
+	0% {margin-left: -235px; opacity:1;}
+	75% {margin-left: 60%; opacity:1}
+	85% {margin-left: 80%; opacity:0;}
+	100% {margin-left: 80%; opacity:0;}
 }
 
 .fish{
