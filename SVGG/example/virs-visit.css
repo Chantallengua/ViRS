@@ -29,6 +29,8 @@ float: left; /*togli questo float per evitare che il testo sia allineato e circo
 margin: 0px 15px 15px 0px;
 }
 
+
+
 /*Floating Back-To-Top Button*/
     #myBtn {
         position: fixed;
@@ -56,24 +58,6 @@ color: black; font-family: 'Raleway';
 
 
 
-/*Floating Back-To-Top Button*/
-@media{
-    .uff {
-        position: fixed;
-        bottom: 5%;
-        float: left;
-        right: 87%;
-        left: 13%;
-        max-width: 120px;
-        width: 100%;
-        font-size: 14px;
-        border-color: rgba(220,220,220,0.7);
-        background-color: rgba(255,255,255,0.7);
-        padding: 7px;
-        border-radius: 4px;
-		z-index:-2;
-    }
-}
 
 
 	
